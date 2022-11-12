@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap');
+
+:root {
+    --fonte-sub-titulos: 'Dosis', sans-serif;
+    --fonte-titulos: 'Josefin Sans', sans-serif;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: darkgray;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+header  img {
+    width: 50vw;
+}
+
+span#burguer {
+    display: block;
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu  ul li {
+    list-style: none;
+    
+}
+
+menu > ul a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.699);
+    border: 1px solid rgba(169, 169, 169, 0.274);
+    border-radius: 20px;
+    padding: 5px 4px;
+    margin-right: 20px;
+}
+
+menu > ul a:hover {
+    background-color: lightgray;
+    color: black;
+    transition: 0.5s;
+    
+}
+
+.container {
+    display: none;
+}
+
+.container {
+    display: flex;
+    background-color: lightgray;
+    padding: 5px;
+    flex-wrap: wrap;
+    
+}
+
+a {
+    text-decoration: none;
+}
+.container .item  {
+    background-color: brown;
+    margin: 5px 0 5px 8px;
+    width: 41vw;
+    padding: 10px 0 10px 10px;
+    border-radius: 50px;
+    flex-flow: row wrap;
+    display: flex;
+    color: white;
+    border-top: 2px solid gray;
+}
+
+.container .item:hover {
+    color: blue;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.384);
+    margin: 5px;
+}
+
+main {
+    background-color: white;
+    width: 92vw;
+    margin: auto;
+    text-align: justify;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+
+main hr {
+    margin: 0px 0px 15px 0px;
+}
+main  p {
+    padding: 8px 5px; 
+    width: 92vw; 
+    font-weight: 100;
+}
+
+main h2 {
+    margin-top: 8%;
+}
+
+main article ul {
+    list-style-position: inside;
+    padding: 5px;
+}
+
+article li ul {
+    margin-left: 40px;
+    line-height: normal;
+    list-style: disc;
+}
+
+footer {
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    font-family: var(--fonte-sub-titulos);
+    text-shadow: 1px 1px 0px black;
+}

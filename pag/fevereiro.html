@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/celular.css">
+    <link rel="stylesheet" href="../estilos/media-query.css">
+    <title>Document</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <a href="index.html"><img src="../imagens/Completo-transp-corte2.png" alt="Logo" ></a>
+        
+        <menu>
+            <ul>
+                <li><a href="Sobre.html">Sobre</a></li>
+            </ul>
+        </menu>
+    </header>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <div class="container" id="itens">
+        <a href="../index.html">
+            <div class="item">Janeiro</div>
+        </a>
+        <a href="fevereiro.html">
+            <div class="item">Fevereiro</div>
+        </a>
+        <a href="marco.html">
+            <div class="item">Março</div>
+        </a>
+        <a href="abril.html">
+            <div class="item">Abril</div>
+        </a>
+        <a href="maio.html">
+            <div class="item">Maio</div>
+        </a>
+        <a href="junho.html">
+            <div class="item">Junho</div>
+        </a>
+        <a href="julho.html">
+            <div class="item">Julho</div>
+        </a>
+        <a href="agosto.html">
+            <div class="item">Agosto</div>
+        </a>
+        <a href="setembro.html">
+            <div class="item">Setembro</div>
+        </a>
+        <a href="outubro.html">
+            <div class="item">Outubro</div>
+        </a>
+        <a href="novembro.html">
+            <div class="item">Novembro</div>
+        </a>
+        <a href="dezembro.html">
+            <div class="item">Dezembro</div>
+        </a>
+    </div>
+    
+    <main>
+        <article>
+            <h1>Fevereiro</h1>
+            <hr>
+            <p>
+                <strong>Fevereiro</strong> é o segundo mês do ano pelo calendário gregoriano e pelo seu antecessor, o calendário juliano, e era o décimo-segundo e último mês no calendário luni-solar romano extinto em 46 a.C. (à época chamado de <strong>Februário</strong>).<small><sup>[1]</sup></small> É justamente o fato de sua origem ser o último mês do ano que faz com que ele tenha a duração de 28 dias[2], a não ser em anos bissextos, em que é adicionado um dia a este mês. Assim, ele é o primeiro de cinco meses a ter menos de 31 dias (os outros quatro são Abril, Junho, Setembro e Novembro), mas o único deles a ter uma duração inferior a 30 dias. 
+            </p>
+            <p>No Hemisfério sul, fevereiro é o equivalente sazonal de agosto no hemisfério norte.</p>
+            <p>
+                Assim, enquanto fevereiro é o terceiro e último mês do inverno meteorológico no Hemisfério norte, no Hemisfério sul fevereiro é o terceiro e último mês do verão meteorológico. 
+            </p>
+            <p>
+                O nome fevereiro vem do latim februarius, inspirado em Fébruo, deus da morte e da purificação na mitologia etrusca. Originariamente, fevereiro possuía 29 dias e 30 como ano bissexto, mas por exigência do Imperador César Augusto, de Roma no ano 8 a.c, um de seus dias passou para o mês de agosto, para que ficasse com 31 dias, semelhante a julho, mês batizado assim em homenagem a Júlio César.
+            </p>
+            <p>A Igreja dedica o mês de fevereiro à Sagrada Familia.</p>
+
+            <h2>Astrologia</h2>
+            <hr>
+            <p>Devido a que no calendário luni-solar romano <strong>Februário</strong> ter sido o último mês do ano, os signos do zodíaco ocidental de fevereiro são os dois últimos: Aquário (até 19 de fevereiro) e Peixes (20 de fevereiro em diante).</p>
+
+            <h2>Datas comemorativas</h2>
+            <hr>
+            <ul>
+                <h3>Internacional</h3>
+                <li>01 de fevereiro - Dia do Pesquisador em Medicina Baseada em Evidências.</li>
+                <li>02 de fevereiro- Apresentação de Jesus no Templo</li>
+                <li>14 de fevereiro - Dia dos Namorados.</li>
+            </ul>
+            <ul>
+                <h3>Brasil</h3>
+                <li>Terça-feira de Carnaval (3 de fevereiro a 9 de março em ano não bissexto ou 4 de fevereiro a 9 de março em ano bissexto)</li>
+                <li>Quarta-feira de cinzas (uma quarta-feira entre 4 de fevereiro e 10 de março em ano não bissexto ou 5 de fevereiro a 10 de março em ano bissexto)</li>
+                <li>1 de fevereiro - Dia do Publicitário</li>
+                <li>2 de fevereiro <ul>
+                    <li>Dia do Agente Fiscal</li>
+                    <li>Dia de Iemanjá</li>
+                    <li>Dia de Nossa Senhora dos Navegantes</li>
+                </ul></li>
+                <li>5 de fevereiro - Dia do Datiloscopista</li>
+                <li>7 de fevereiro - Dia do Gráfico</li>
+                <li>9 de fevereiro <ul>
+                    <li>Dia do Zelador</li>
+                    <li>Dia do Frevo (Ritmo Pernambucano</li>
+                </ul></li>
+                <li>10 de fevereiro - Dia do Atleta Profissional</li>
+                <li>11 de fevereiro <ul>
+                    <li>Dia da Criação da Casa da Moeda do Brasil</li>
+                    <li>Dia Mundial do Enfermo</li>
+                </ul></li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Criado por João Geraldo.</p>
+    </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'flex'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'flex'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'flex'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
