@@ -116,8 +116,13 @@ main  p {
     font-weight: 100;
 }
 
+main h1, h3 {
+    font-family: var(--fonte-titulos);
+}
+
 main h2 {
     margin-top: 8%;
+    font-family: var(--fonte-sub-titulos);
 }
 
 main article ul {
