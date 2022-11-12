@@ -24,6 +24,7 @@ header {
 
 header  img {
     width: 50vw;
+    padding-left: 10px;
 }
 
 span#burguer {
