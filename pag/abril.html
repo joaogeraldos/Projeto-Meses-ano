@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../estilos/celular.css">
+    <link rel="stylesheet" href="../estilos/media-query.css">
+    <title>Abril</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <a href="../index.html"><img src="../imagens/Completo-transp-corte2.png" alt="Logo" ></a>
+        
+        <menu>
+            <ul>
+                <li><a href="Sobre.html">Sobre</a></li>
+            </ul>
+        </menu>
+    </header>
+    
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <div class="container" id="itens">
+        <a href="../index.html">
+            <div class="item">Janeiro</div>
+        </a>
+        <a href="fevereiro.html">
+            <div class="item">Fevereiro</div>
+        </a>
+        <a href="marco.html">
+            <div class="item">Março</div>
+        </a>
+        <a href="abril.html">
+            <div class="item">Abril</div>
+        </a>
+        <a href="maio.html">
+            <div class="item">Maio</div>
+        </a>
+        <a href="junho.html">
+            <div class="item">Junho</div>
+        </a>
+        <a href="julho.html">
+            <div class="item">Julho</div>
+        </a>
+        <a href="agosto.html">
+            <div class="item">Agosto</div>
+        </a>
+        <a href="setembro.html">
+            <div class="item">Setembro</div>
+        </a>
+        <a href="outubro.html">
+            <div class="item">Outubro</div>
+        </a>
+        <a href="novembro.html">
+            <div class="item">Novembro</div>
+        </a>
+        <a href="dezembro.html">
+            <div class="item">Dezembro</div>
+        </a>
+    </div>
+    <main>
+        <article>
+            <h1>Abril</h1>
+            <hr>
+            <p><strong>Abril</strong> é o quarto mês do calendário gregoriano e tem 30 dias. O seu nome deriva do Latim <em>Aprilis</em>, que significa <em>abrir</em>, numa referência à germinação das culturas. Outra hipótese sugere que Abril seja derivado de <em>Aprus</em>. Outra versão é que se relaciona com Afrodite, nome grego da deusa Vênus, que teria nascido de uma espuma do mar que, em grego antigo, se dizia "abril".</p>
+            <p>
+                Abril é um mês de primavera no hemisfério norte e outono no hemisfério sul. Portanto abril no hemisfério sul é o equivalente sazonal de outubro no hemisfério norte e vice-versa. 
+            </p>
+            <p>A Igreja dedica o mês de Abril á Eucaristia e ao Divino Espirito Santo.</p>
+
+            <h2>Datas comemorativas</h2>
+            <hr>
+            <ul>
+               <li>Páscoa (algum domingo entre 22 de março e 25 de abril)</li> 
+               <li>1 de abril - Dia da mentira e Dia do Humorismo</li>
+               <li>2 de abril <ul>
+                <li>Dia Internacional do Livro Infantil</li>
+                <li>Dia Mundial de Conscientização do Autismo</li>
+               </ul></li>
+               <li>3 de abril - Dia da Verdade, Dia do Atuário e Dia do desporto Comunitário</li>
+               <li>4 de abril <ul>
+                <li>Dia do parkinsoniano</li>
+                <li>Dia da Paz (Angola)</li>
+               </ul></li>
+               <li>4 de abril - Aniversário de Marília São Paulo</li>
+               <li>5 de abril - Dia do Propagandista Farmacêutico, Dia dos Fabricantes de Materiais de Construção, Dia da Árvore (na Coréia do Sul) e Dia das Telecomunicações</li>
+               <li>7 de abril - Brasil: Dia do Corretor, Dia do Jornalista (fundação da Associação Brasileira de Imprensa ABI), Dia do Médico Legista. Mundo: Dia Mundial da Saúde, Dia do combate à hipertensão e Dia da Luta contra o Fumo</li>
+               <li>8 de abril - Dia do Correio, Dia da Natação, Dia mundial de combate ao cancro</li>
+               <li>9 de abril - Dia Nacional do Aço</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Criado por João Geraldo.</p>
+    </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'flex'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'flex'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'flex'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
